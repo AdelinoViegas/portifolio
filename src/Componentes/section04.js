@@ -6,11 +6,11 @@ export default function section04(){
 
         <ul className='contacts'>        
          <li>
-           <p>E-mail</p>
+           <span className="image1"></span>
            <a href='#'>adelinoviegas.prog@gmail.com</a>
          </li>
          <li>
-           <p>Telefone</p>
+           <span className="image2"></span>
            <a href='#'>(244)931-05-33-90</a>
          </li>
         </ul>

@@ -13,44 +13,125 @@ export default function section01(){
     <section id='hability' className='section2'> 
     <h2>Habilidades</h2>
     <div className='tecnology'>
-    <div className='first-list'>
             <div className='hability'>
-            <img src={HTML5}/>
-            <p>HTML5</p>
+                <div id='left'>
+                    <img src={HTML5}/>
+                </div>
+                <div id='right'>
+                   <p>Experiência: <span>3anos</span></p>
+                   <div>     
+                        <p>Nivel:</p>
+                        <div className='barra'>
+                            <div className='level90'></div>    
+                        </div>
+                   </div>
+                </div>
             </div>
+
             <div className='hability'>
-            <img src={CSS3}/> 
-            <p>CSS3</p>
+                <div id='left'>
+                    <img src={CSS3}/>
+                </div>
+                <div id='right'>
+                   <p>Experiência: <span>3anos</span></p>
+                   <div>     
+                        <p>Nivel:</p>
+                        <div className='barra'>
+                             <div className='level80'></div>
+                        </div>
+                   </div>
+                </div>
             </div>
+
             <div className='hability'>
-            <img src={JS}/>
-            <p>JAVASCRIPT</p>                         
+            <   div id='left'>
+                    <img src={JS}/>
+                </div>
+                <div id='right'>
+                   <p>Experiência: <span>1ano</span></p>
+                   <div>     
+                        <p>Nivel:</p>
+                        <div className='barra'>
+                            <div className='level30'></div>
+                        </div>
+                   </div>
+                </div>                        
             </div>
+
             <div className='hability'>
-            <img src={BOOTSTRAP}/>
-            <p>BOOTSTRAP</p>                        
+            <div id='left'>
+                    <img src={BOOTSTRAP}/>
+                </div>
+                <div id='right'>
+                   <p>Experiência: <span>1ano</span></p>
+                   <div>     
+                        <p>Nivel:</p>
+                        <div className='barra'>
+                            <div className='level60'></div>
+                        </div>
+                   </div>
+                </div>                       
             </div>
-    </div>
-    <div className='second-list'>
+
             <div className='hability'>
-            <img src={PHP}/>
-            <p>PHP</p>
+                <div id='left'>
+                    <img src={PHP}/>
+                </div>
+                <div id='right'>
+                   <p>Experiência: <span>1ano</span></p>
+                   <div>     
+                        <p>Nivel:</p>
+                        <div className='barra'>
+                            <div className='level30'></div>
+                        </div>
+                   </div>
+                </div>
             </div>
+
             <div className='hability'>
-            <img src={SQL}/> 
-            <p>SQL</p>
+                <div id='left'>
+                    <img src={SQL}/>
+                </div>
+                <div id='right'>
+                   <p>Experiência: <span>1anos</span></p>
+                   <div>     
+                        <p>Nivel:</p>
+                        <div className='barra'>
+                           <div className='level60'></div>
+                        </div>
+                   </div>
+                </div>
             </div>
+
             <div className='hability'>
-            <img src={REACT}/>
-            <p>REACT</p>                         
-            </div>                    
-    </div>
-    <div className='third-list'>
+                <div id='left'>
+                    <img src={REACT}/>
+                </div>
+                <div id='right'>
+                   <p>Experiência: <span>5meses</span></p>
+                   <div> 
+                      <p>Nivel:</p>    
+                      <div className='barra'>
+                           <div className='level20'></div>
+                      </div>
+                   </div>
+                </div>                       
+            </div>
+
             <div className='hability'>
-            <img src={GIT}/>
-            <p>GIT</p>
+                <div id='left'>
+                    <img src={GIT}/>
+                </div>
+                <div id='right'>
+                   <p>Experiência: <span>4meses</span></p>
+                   <div>     
+                        <p>Nivel:</p>
+                        <div className='barra'>
+                            <div className='level10'></div>
+                        </div>
+                   </div>
+                </div>
             </div>                
-    </div>
     </div>
     </section>
 )

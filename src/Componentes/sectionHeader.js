@@ -1,13 +1,12 @@
 import React from "react";
-import Banner from './img/frontend.gif';
 
 export default function section0(){
     return(
-        <section id='header' className='section'>
+      <section id='header' className='section'>
         <div className='content'>
              <p>Saudações, sou o </p>
              <p className='name'>Adelino Viegas</p>
-             <p>Desenvolvedor Front-end</p>
+             <p>Desenvolvedor WEB</p>
              <div className='links'>
               <a href='http://www.github.com/AdelinoViegas' target='_blank'>
                 <button>GITHUB</button>
@@ -17,10 +16,6 @@ export default function section0(){
               </a>
              </div>
          </div>
-
-        <div className='img'>   
-          <img src={Banner}/>
-        </div>
      </section>
     )
 }

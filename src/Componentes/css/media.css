@@ -1,43 +1,17 @@
-@media screen and (max-width:1180px){
-    .section{
-        grid-template-columns: auto;
-    }
-
-    .section img{
-        display: none;
-    }
-
-    .section{
-        display: grid;
-        grid-template-columns: auto;
-        align-items:center;
-        margin-top:70px;
-        height:645px;
-
-}
-
-}
-
-
-
 
 
 @media screen and (max-width:1120px){
 
-    .section3{
+    .project_section{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding:160px 0;
     }
 
-    .section3 .first-list{
+    .project_section .row{
         display: block;
         padding-top: 0px;
-    }
-
-    .section3 .first-list article{
-        padding-top: 80px;
     }
 
 }
@@ -47,15 +21,11 @@
 
 
 @media screen and (max-width:900px){
-    .menu{
-        display: none;
-     }
 
-     .section{
+.section{
         display: block;
         height: auto;
-        padding:100px 0;
-
+        padding:100px 0;    
 }
 
 .section .content{
@@ -68,16 +38,16 @@
 }
 
 
-.section2.section3,.section4,.section5{
+.section2,.project_section,.section4,.section5{
     padding:100px 0;
 }
 
-.section2 h2,.section3 h2,.section4 h2,.section5 h2{
+.section2 h2,.project_section .project__text,.section4 h2,.section5 h2{
     font-size: 2.2rem;
 }
 
-.section3 .first-list article .description .tools p{
-    font-size: 19px;
+.project_section .project__tools__text{
+    font-size: 20px;
 
 }
 
@@ -109,12 +79,13 @@
         
     }
 
+
+
  /*menu reponsivo*/
 
- 
 #btn-menu{
     display: block;
-    border-top: 3px solid #7D5220;
+    border-top: 3px solid #fff;
     width: 30px;
 }
 
@@ -123,7 +94,7 @@
     display: block;
     width: inherit;
     height: 3px;
-    background-color: #7D5220;
+    background-color: #fff;
     margin-top: 5px;
     transition: .6s;
     position: relative;
@@ -143,39 +114,101 @@
 }
 
 .menu{
-    display: block;
+    display:block;
     position: absolute;
-    width: 100%;
-    height: 0;
-    top: 69px;
-    right: 0;
-    z-index: 100000;
-    background-color: #2b211f;
-    transition: height .6s;
-    overflow-y: hidden;
+    width: 0px;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding:40px 20px 20px;
+    background-color: #fff;
+    overflow: hidden;
+    transition:.4s;
+    opacity: 0;
+}
+
+
+.menu::before{
+    content:"AV";
+    display: block;
+    color:#000;
+    font:bold 2.4rem 'Kotta One';
+    margin-right:20px;
+    text-align: right;
+}
+
+.menu li{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: 20px;
+}
+
+.menu li .icon__img{
+    width:40px;
+    height:40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu li .icon__img--home{
+    background-image: url("../img/icon/home.png");
+}
+
+.menu li .icon__img--hability{
+    background-image: url("../img/icon/hability.png");
+}
+
+.menu li .icon__img--project{
+    background-image: url("../img/icon/project.png");
+}
+
+.menu li .icon__img--about{
+    background-image: url("../img/icon/about.png");
+}
+
+.menu li .icon__img--contact{
+    background-image: url("../img/icon/contact.png");
+}
+
+.menu a {
+    display: block;
+    margin: 16px 0px;
+    padding:10px 5px;
+    font-size:22px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color:#000;
+    text-decoration:none;
+}
+
+.menu a:hover{
+    border-bottom:none;
 }
 
 .navegation.activo .menu{
     display: block;
-    height:  290px;
+    width: 300px;
+    opacity:1;
 }
 
 .navegation.activo .menu a {
   text-decoration: none;
 }
 
-.menu a {
-    display: block;
-    margin: 25px 0px;
-    font-size:20px;
-    font-weight: 600;
-    color:#7D5220;
-    text-align:center;
-    text-decoration:none;
+.section5 .contacts li{
+    margin:30px 6px;
 }
 
-.menu a:hover{
-    border-bottom:none;
+.section5 .contacts li a{
+    padding:10px 2px;
+}
+
+.section5 .contacts li span{
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
 }
 
 }
@@ -187,51 +220,43 @@
 
 
 @media screen and (max-width:800px){
-    .section3 .first-list{
+
+    .project_section .row{
         display: block;
-        justify-content: none;
-        column-gap: 0px;
-        padding-top: 0px;
     }
 
-    .section3 .first-list article .description,.section3 .second-list article .description{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 150px;
-        background-color: #4D3621;
-        border-radius: 0px 20px 20px 0px;
-        row-gap: 0px;
+    .project_section .project__description{
+        width: 130px;
+
     }
 
-    .section3 .first-list article,.section3 .second-list article{
+    .project_section .project{
         display: flex;    
         width: 400px;
-        height: 290px;
+        height: 300px;
     }
 
-    .section3 .first-list article .description .tools{
+    .project_section .project__tools{
         display: flex;
         flex-direction: column;
        /* align-items: center;*/
         padding: 2px 4px;
       }
 
-    .section3 .first-list article .description .tools p{
+    .project_section .project__tools__text{
         padding:3px 3px 8px 3px;
-        color:#7D5220;
         font-size: 18px;
         font-weight:bold;
 
     }
 
-    .section3 .first-list article .description .tools ul button,
-.section3 .first-list article .description .links ul button{
+.project_section .project__tools__list button,
+.project_section .project__links__list button{
     border-radius:4px;
     padding:3px 2px;
     margin-bottom:0px;
 }
+
 
 }
 
@@ -241,25 +266,45 @@
 
 @media screen and (max-width:650px){
 
-    .menu{
-        top: 60px;
-    }
-
-    .header{
-        height:60px;
-        border-bottom:2px solid #2A2A2A;
-    }
- 
-    .logo{
-        color:#7D5220;
+   .logo{
         font-size:1.9rem;
         font-weight:bold;
         font-family: 'Kotta One', serif;
     }
 
+    .menu::before{
+        font:bold 1.9rem 'Kotta One';
+        margin-right:16px;
+    }
+    
+    .menu li{
+        column-gap: 8px;
+        margin-left: 15px;
+    }
+    
+    .menu li .icon__img{
+        width:35px;
+        height:35px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .menu a {
+        margin: 16px 0px;
+        padding:10px 5px;
+        font-size:16px;
+    }
+
+    .navegation.activo .menu{
+        width: 250px;
+    }
+      
+    
     .section{
-        margin-top:50px;
-   }
+        display: block;
+        height: auto;
+        padding:60px 0;
+     }
 
    .section .content{
     font-size:2.1rem;
@@ -319,25 +364,24 @@
 /*project*/
 
 
-.section3 .first-list article .description,.section3 .second-list article .description{
+.project_section .project__description{
     width: 120px;
 }
 
-.section3 .first-list article,.section3 .second-list article{
+.project_section .project{
     width: 340px;
     height: 270px;
 }
 
-.section3 .first-list article .description .tools p{
+.project_section .project__tools__text{
     padding:2px 2px 6px 2px;
-    color:#7D5220;
     font-size: 18px;
     font-weight:bold;
 
 }
 
-.section3 .first-list article .description .tools ul button,
-.section3 .first-list article .description .links ul button{
+.project_section .project__tools__list button,
+.project_section .project__links__list button{
 border-radius:4px;
 padding:3px 2px;
 margin-bottom:0px;
@@ -354,9 +398,10 @@ margin-bottom:0px;
 }
 
 
-.section5 .contacts li p{
-    font-size: 1.4rem;
-    font-weight:800;
+.section5 .contacts li span{
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
 }
 
 .section5 .contacts li a{
@@ -372,9 +417,7 @@ margin-bottom:0px;
 
  .section{
         padding: 60px 0;
-        height:100%;
-
-}
+  }
 
    .section .content{
     font-size:1.7rem;
@@ -395,12 +438,17 @@ margin-bottom:0px;
     border-radius:8px;
 }
 
-.section2,.section3,.section4,.section5{
+.section2,.project_section,.section4,.section5{
     padding:60px 0;
 }
 
-.section2 h2,.section3 h2,.section4 h2,.section5 h2{
+.section2 h2,.project_section .project__text,.section4 h2,.section5 h2{
     font-size: 1.8rem;
+}
+
+.section2 .tecnology .hability{
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .section2 .tecnology .hability img{
@@ -408,51 +456,52 @@ margin-bottom:0px;
     height: 40px;
 }
 
-.section3 .first-list article .description,.section3 .second-list article .description{
+.project_section .project__description{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height:120px;
     border-radius:0px 0px 20px 20px;
-    padding: 4px 10px;
+    padding:0;
     row-gap: 8px;
 }
 
-.section3 .first-list article .description .tools{
+.project_section .project__tools{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    padding:10px 10px 0px 10px;
   }
 
-  .section3 .first-list article .description .tools ul{
+  .project_section .project__tools__list{
     display: flex;
     flex-direction: row;
+    column-gap: 10px;
   }
 
-  .section3 .first-list article .description .links{
+  .project_section .project__links{
     width: 100%;
   }
 
-.section3 .first-list article .description .links ul{
+  .project_section .project__links__list{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding:6px 2px;
+    padding:6px 10px;
 
 }
 
-.section3 .first-list article .description .tools ul button,
-.section3 .first-list article .description .links ul button{
+.project_section .project__tools__list button,
+.project_section .project__links__list button{
     cursor:pointer;
     font-size: 12px;
 }
 
-.section3 .first-list article,.section3 .second-list article{
+.project_section .project{
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 250px;
+    height: 380px;
     margin-bottom: 140px;
 
 }
@@ -485,11 +534,36 @@ margin-bottom:0px;
 
 @media screen and (max-width:340px){
 
+    .menu::before{
+        font:bold 1.9rem 'Kotta One';
+        margin-right:16px;
+    }
+    
+    .menu li{
+        column-gap: 8px;
+        margin-left: 10px;
+    }
+    
+    .menu li .icon__img{
+        width:30px;
+        height:30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .menu a {
+        margin: 16px 0px;
+        padding:10px 5px;
+        font-size:16px;
+    }
+
+    .navegation.activo .menu{
+        width: 220px;
+    }
+
 .section{
         padding: 60px 0;
-        height:100%;
-
-}
+ }
 
    .section .content{
     font-size:1.4rem;
@@ -511,23 +585,23 @@ margin-bottom:0px;
     border-radius:6px;
 }
 
-.section2 h2,.section3 h2,.section4 h2,.section5 h2{
+.section2 h2,.project_section .project__text,.section4 h2,.section5 h2{
     font-size: 1.6rem;
 } 
 
-.section3 .first-list article .description,.section3 .second-list article .description{
+.project_section .project__description{
     border-radius:0px 0px 15px 15px;
 }
 
-.section3 .first-list article .description .tools p{
+.project_section .project__tools__text{
     font-size: 16px;
 }
 
-.section3 .first-list article .description .links{
+.project_section .project__links{
     width: 100%;
   }
 
-.section3 .first-list article .description .links ul{
+.project_section .project__links__list{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -536,22 +610,19 @@ margin-bottom:0px;
 }
 
 
-.section3 .first-list article,.section3 .second-list article{
+.project_section .project{
     display: flex;
     flex-direction: column;
     width: 260px;
-    height: 220px;
+    height: 300px;
     margin-bottom: 140px;
 
+
 }
 
-.section4 p{
-    font-size: 1.3rem;
-}
-
-.section5 .contacts li p{
-    font-size: 1.2rem;
-    font-weight:800;
+.section5 .contacts li span{
+    width: 50px;
+    height: 50px;
 }
 
 .section5 .contacts li a{
@@ -561,5 +632,3 @@ margin-bottom:0px;
 }
 
 
-
-/*css menu*/
