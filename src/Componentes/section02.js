@@ -1,10 +1,10 @@
-import HTML from './img/html.png';
-import CSS from './img/css.png';
-import JS from './img/js.png';
-import BS from './img/bootstrap.png';
-import REACT from './img/react.png';
-import VIEWS from './img/view.jpg';
-import GITHUB from './img/github.jpg';
+import HTML from '../img/html.png';
+import CSS from '../img/css.png';
+import JS from '../img/js.png';
+import BS from '../img/bootstrap.png';
+import REACT from '../img/react.png';
+import VIEWS from '../img/view.jpg';
+import GITHUB from '../img/github.jpg';
 
 export default function section02() {
   return (

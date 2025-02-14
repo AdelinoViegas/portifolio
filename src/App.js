@@ -7,11 +7,10 @@ import Section3 from './Componentes/section03'
 import Section4 from './Componentes/section04'
 
 /*css*/
-import './Componentes/css/sections.css'
-import './Componentes/css/media.css'
+import './css/sections.css'
+import './css/media.css'
 
 export default function App() {
-
   return (
     <>
       <Header />

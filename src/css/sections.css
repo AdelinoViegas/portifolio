@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Kotta+One&family=Poppins:ital,wght@0,100;1,300&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/*niveis de conhecimento*/
+.level10,
+.level20,
+.level30,
+.level40,
+.level50,
+.level60,
+.level70,
+.level80,
+.level90 {
+  display: block !important;
+  height: 100% !important;
+  background-color: #f3c950;
+
+}
+
+.sizeIcon {
+  width: 32px !important;
+  height: 35px !important;
+}
+
+.level90 {
+  width: 90%;
+}
+
+.level80 {
+  width: 80%;
+}
+
+.level70 {
+  width: 70%;
+}
+
+.level60 {
+  width: 60%;
+}
+
+.level50 {
+  width: 50%;
+}
+
+.level40 {
+  width: 40%;
+}
+
+.level30 {
+  width: 30%;
+}
+
+.level20 {
+  width: 20%;
+}
+
+.level10 {
+  width: 10%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 120px 0px;
+  width: 100%;
+  background-color: #1c1d39;
+}
+
+.section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Light 300', sans-serif;
+}
+
+.section .content p {
+  line-height: 65px;
+}
+
+.section .content .name {
+  color: #f3c950;
+  font-size: 3.2rem;
+  font-family: 'poppins', sans-serif;
+}
+
+.section .content .links {
+  display: flex;
+  column-gap: 20px;
+  padding-top: 90px;
+}
+
+.section .content .links a button {
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(221, 166, 0);
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: .5s;
+  letter-spacing: 3px;
+}
+
+.section .content .links a button:hover {
+  background-color: #f3c950;
+  color: #1c1d39;
+}
+
+/*section hability*/
+.section2 {
+  background-color: #101326;
+  padding: 100px 0;
+}
+
+.section2 h2 {
+  text-align: center;
+  font-family: 'Regular 400', sans-serif;
+  font-size: 2.8rem;
+  color: #d5dbf3;
+}
+
+.section2 .tecnology {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 60px;
+  padding: 100px 20px;
+}
+
+.section2 .tecnology .hability {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  width: 320px;
+  padding: 20px;
+  border: 1px solid rgb(127, 117, 90);
+  border-radius: 5px;
+}
+
+.section2 .tecnology .hability #right div {
+  display: flex;
+  flex-wrap: wrap;
+  height: 34px;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.section2 .tecnology .hability #right div .barra {
+  width: 220px;
+  height: 10px;
+  border: 1px solid #f3c950;
+}
+
+.section2 .tecnology .hability img {
+  width: 48px;
+  height: 48px;
+}
+
+.section2 .tecnology .hability p {
+  font-family: 'light';
+  letter-spacing: 2px;
+  color: white;
+}
+
+.section2 .tecnology .hability p span {
+  color: #f3c950;
+}
+
+/*Section project*/
+.project_section {
+  background-color: #1c1d39;
+  padding: 100px 0;
+}
+
+.project_section .project__text {
+  text-align: center;
+  font-family: 'Regular 400', sans-serif;
+  font-size: 2.8rem;
+  color: #d5dbf3;
+}
+
+.project_section .row {
+  display: flex;
+  justify-content: center;
+  column-gap: 90px;
+}
+
+.project_section .project {
+  display: flex;
+  width: 470px;
+  height: 320px;
+  margin: 70px 10px;
+}
+
+.project_section .project__image {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: background-position 2s;
+}
+
+.project__image--facebook {
+  background-image: url("../img/icon/facebbok.png");
+}
+
+.project__image--food {
+  background-image: url("../img/icon/food.png");
+}
+
+.project__image--nft {
+  background-image: url("../img/icon/nft.png");
+}
+
+.project__image--shop {
+  background-image: url("../img/icon/shop.png");
+}
+
+.project_section .project__image:hover {
+  background-position: 100% 100%;
+}
+
+.project_section .project__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  background-color: #101326;
+  border-radius: 0px 20px 20px 0px;
+  flex-shrink: 0;
+}
+
+.project_section .project__tools {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 4px;
+}
+
+.project_section .project__links {
+  width: 100%;
+}
+
+.project_section .project__tools__text {
+  padding: 15px 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.project_section .project__tools__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project_section .project__tools__list li,
+.project_section .project__links__list button {
+  margin-bottom: 4px;
+}
+
+.project_section .project__tools__list li,
+.project_section .project__links__list li {
+  width: 40px;
+  height: 40px
+}
+
+.project_section .project__links__list button {
+  cursor: pointer;
+}
+
+.project_section .project__links__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+/*Sobre*/
+.section4 {
+  background-color: #101326;
+  padding: 100px 0;
+}
+
+.section4 h2 {
+  text-align: center;
+  font-family: 'Regular 400', sans-serif;
+  font-size: 2.8rem;
+  color: #d5dbf3;
+}
+
+.section4 p {
+  padding: 50px 200px;
+  text-align: center;
+  font-family: 'Regular 400', sans-serif;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 40px;
+  color: white;
+}
+
+/*Contato*/
+.section5 {
+  background-color: #1c1d39;
+  padding: 100px 0 50px 0;
+}
+
+.section5 h2 {
+  text-align: center;
+  font-family: 'Regular 400', sans-serif;
+  font-size: 2.8rem;
+  color: #d5dbf3;
+}
+
+.section5 .contacts {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+}
+
+.section5 .contacts li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+
+}
+
+.section5 .contacts li span {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.section5 .contacts li .image1 {
+  background-image: url("../img/icon/email.png");
+}
+
+.section5 .contacts li .image2 {
+  background-image: url("../img/icon/call.png");
+}
+
+.section5 .contacts li a {
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Regular 400', sans-serif;
+  font-size: 2rem;
+  color: white;
+}

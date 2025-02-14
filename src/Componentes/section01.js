@@ -1,11 +1,11 @@
-import BOOTSTRAP from './img/icon/bootstrap.png';
-import REACT from './img/icon/react3.png';
-import HTML5 from './img/icon/html.png';
-import CSS3 from './img/icon/css.png';
-import PHP from './img/icon/php.png';
-import SQL from './img/icon/sql2.svg';
-import GIT from './img/icon/git.png';
-import JS from './img/icon/js.png';
+import BOOTSTRAP from '../img/icon/bootstrap.png';
+import REACT from '../img/icon/react3.png';
+import HTML5 from '../img/icon/html.png';
+import CSS3 from '../img/icon/css.png';
+import PHP from '../img/icon/php.png';
+import SQL from '../img/icon/sql2.svg';
+import GIT from '../img/icon/git.png';
+import JS from '../img/icon/js.png';
 
 export default function section01() {
   return (
