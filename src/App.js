@@ -10,16 +10,16 @@ import Section4 from './Componentes/section04'
 import './Componentes/css/sections.css'
 import './Componentes/css/media.css'
 
-export default function App(){
+export default function App() {
 
-  return(
+  return (
     <>
-      <Header/>
-      <SectionHeader/>
-      <Section1/>
-      <Section2/>
-      <Section3/>
-      <Section4/>
+      <Header />
+      <SectionHeader />
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
     </>
   )
 }
