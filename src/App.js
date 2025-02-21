@@ -5,8 +5,6 @@ import Section1 from './Componentes/section01'
 import Section2 from './Componentes/section02'
 import Section3 from './Componentes/section03'
 import Section4 from './Componentes/section04'
-
-/*css*/
 import './css/sections.css'
 import './css/media.css'
 
