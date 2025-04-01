@@ -11,6 +11,7 @@ export default function section01() {
   return (
     <section id='hability' className='section2'>
       <h2>Habilidades</h2>
+      
       <div className='tecnology'>
         <div className='hability'>
           <div id='left'>
