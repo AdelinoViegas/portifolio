@@ -11,4 +11,3 @@ export default function section03() {
     </section>
   )
 }
-
